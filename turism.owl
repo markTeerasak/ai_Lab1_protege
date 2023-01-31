@@ -1,0 +1,122 @@
+Prefix(:=<http://www.semanticweb.org/noah/ontologies/2023/0/untitled-ontology-10#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/noah/ontologies/2023/0/untitled-ontology-10>
+
+Declaration(Class(:ThaiAccommodation))
+Declaration(Class(:ThaiAmphope))
+Declaration(Class(:ThaiAttaction))
+Declaration(Class(:ThaiOTOP))
+Declaration(Class(:ThaiProvice))
+Declaration(Class(:ThaiRestaurant))
+Declaration(Class(:ThaiSouvenir))
+Declaration(Class(:ThaiTambon))
+Declaration(DataProperty(:hasFlower))
+Declaration(DataProperty(:hasImageOfProvince))
+Declaration(DataProperty(:hasLatitudeOfProvince))
+Declaration(DataProperty(:hasLongitudeOfProvince))
+Declaration(DataProperty(:hasMotto))
+Declaration(DataProperty(:hasNameOfProvince))
+Declaration(DataProperty(:hasSeal))
+Declaration(DataProperty(:hasTraditionalNameOfProvince))
+Declaration(DataProperty(:hasTree))
+Declaration(DataProperty(:hasURLOfProvince))
+Declaration(NamedIndividual(:ChaiMai))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasFlower (:hasFlower)
+
+DataPropertyDomain(:hasFlower ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasFlower xsd:string)
+
+# Data Property: :hasImageOfProvince (:hasImageOfProvince)
+
+DataPropertyDomain(:hasImageOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasImageOfProvince xsd:string)
+
+# Data Property: :hasLatitudeOfProvince (:hasLatitudeOfProvince)
+
+DataPropertyDomain(:hasLatitudeOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasLatitudeOfProvince xsd:float)
+
+# Data Property: :hasLongitudeOfProvince (:hasLongitudeOfProvince)
+
+DataPropertyDomain(:hasLongitudeOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasLongitudeOfProvince xsd:float)
+
+# Data Property: :hasMotto (:hasMotto)
+
+DataPropertyDomain(:hasMotto ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasMotto xsd:string)
+
+# Data Property: :hasNameOfProvince (:hasNameOfProvince)
+
+DataPropertyDomain(:hasNameOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasNameOfProvince xsd:string)
+
+# Data Property: :hasSeal (:hasSeal)
+
+DataPropertyDomain(:hasSeal ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasSeal xsd:string)
+
+# Data Property: :hasTraditionalNameOfProvince (:hasTraditionalNameOfProvince)
+
+DataPropertyDomain(:hasTraditionalNameOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasTraditionalNameOfProvince xsd:string)
+
+# Data Property: :hasTree (:hasTree)
+
+DataPropertyDomain(:hasTree ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasTree xsd:string)
+
+# Data Property: :hasURLOfProvince (:hasURLOfProvince)
+
+DataPropertyDomain(:hasURLOfProvince ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice))
+DataPropertyRange(:hasURLOfProvince xsd:string)
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :ChaiMai (:ChaiMai)
+
+AnnotationAssertion(rdfs:comment :ChaiMai "")
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty :ThaiProvice) :ChaiMai)
+ClassAssertion(DataSomeValuesFrom(:hasFlower owl:rational) :ChaiMai)
+DataPropertyAssertion(:hasFlower :ChaiMai "Bastard Teak"@en)
+DataPropertyAssertion(:hasFlower :ChaiMai "ทองกวาว"@th)
+DataPropertyAssertion(:hasImageOfProvince :ChaiMai "chiangmai.jpg"@en)
+DataPropertyAssertion(:hasLatitudeOfProvince :ChaiMai "18.8"^^xsd:float)
+DataPropertyAssertion(:hasLongitudeOfProvince :ChaiMai "98.98"^^xsd:float)
+DataPropertyAssertion(:hasMotto :ChaiMai "Doi Sutep is Honor, Tradition is Elegant, Blossoms are Beautiful, Precious Name Nakhon Ping"@en)
+DataPropertyAssertion(:hasMotto :ChaiMai "ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตา นามล ้าค่านครพิงค์"@th)
+DataPropertyAssertion(:hasNameOfProvince :ChaiMai "Chiang Mai"@en)
+DataPropertyAssertion(:hasNameOfProvince :ChaiMai "เชียงใหม่"@th)
+DataPropertyAssertion(:hasSeal :ChaiMai "White Elephant in Glass Cover"@en)
+DataPropertyAssertion(:hasSeal :ChaiMai "ช้างเผือกในเรือนแก้ว"@th)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "Jeang Mai"@en)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "Nop Buri Sri Nakhon Ping Chiang Mai"@en)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "Rattana Tingsa Api Nawaburi Chiang Mai"@en)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "Veang Ping"@en)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "นพบุรีศรีนครพิงค์เชียงใหม่"@th)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "รัตนติงสาอภินวบุรีเชียงใหม่"@th)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "เจียงใหม่"@th)
+DataPropertyAssertion(:hasTraditionalNameOfProvince :ChaiMai "เวียงพิงค์"@th)
+DataPropertyAssertion(:hasTree :ChaiMai "Bastard Teak"@en)
+DataPropertyAssertion(:hasTree :ChaiMai "ทองกวาว"@th)
+DataPropertyAssertion(:hasURLOfProvince :ChaiMai "http://www.chiangmai.go.th"@en)
+
+
+)
